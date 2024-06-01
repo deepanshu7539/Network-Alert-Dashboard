@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Network Alert Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Network Alert Dashboard is a React application that visualizes network alert data using various charts. It provides insights into alert counts over time, severity distribution, top source IPs, and destination ports. The dashboard is designed to be beautiful, responsive, and user-friendly.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Alert Count Over Time**: Line chart showing the number of alerts per day.
+- **Alert Severity Distribution**: Bar chart and Pie chart displaying the distribution of alert severities.
+- **Top Source IPs**: Bar chart displaying the most frequent source IP addresses.
+- **Alerts by Destination Ports**: Bar chart displaying the most frequent destination ports.
+- **Combined View**: Radar chart displaying a combined view of top source IPs and destination ports.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Frontend library for building the user interface.
+- **Chart.js**: JavaScript library for creating charts.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Dummy Data**: Sample data for demonstration purposes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+You can view a live demo of the application [here](https://network-alert-dashboard.vercel.app/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/deepanshu7539/Network-Alert-Dashboard.git
+    cd network-alert-dashboard
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Start the development server**:
+    ```bash
+    npm start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    The application will be available at `http://localhost:3000`.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Navigate to `http://localhost:3000` to view the dashboard.
+- The dashboard displays various charts representing network alert data.
+- The data is processed from a `dummyData` file for demonstration purposes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+network-alert-dashboard/
+├── public/
+│ └── index.html
+├── src/
+│ ├── components/
+│ │ └── Dashboard.js
+│ ├── data/
+│ │ └── dummyData.js
+│ ├── App.js
+│ ├── index.css
+│ └── index.js
+├── .gitignore
+├── package.json
+└── README.md
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+- **public/**: Contains the HTML template.
+- **src/**: Contains the source code, including components and data.
+- **components/**: Contains the `Dashboard.js` component.
+- **data/**: Contains the `dummyData.js` file with sample data.
+- **App.js**: Main application component.
+- **index.css**: Global CSS file.
+- **index.js**: Entry point for the React application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are welcome! If you have suggestions or improvements, please open an issue or submit a pull request.
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### Analyzing the Bundle Size
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions or need further assistance, please contact [deepanshu75378@gmail.com].
